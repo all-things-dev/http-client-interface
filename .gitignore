@@ -12,6 +12,4 @@ gradle/wrapper
 
 # Gradle generated files
 .gradle
-buildSrc/build
-web-app/build
-
+/build
