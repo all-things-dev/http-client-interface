@@ -1,0 +1,12 @@
+[versions]
+
+# Library properties
+annotations = "24.0.1"
+
+# Plugin properties
+kotlin = "1.9.10"
+gradleIntelliJPlugin = "1.15.0"
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+gradleIntelliJPlugin = { id = "org.jetbrains.intellij", version.ref = "gradleIntelliJPlugin" }

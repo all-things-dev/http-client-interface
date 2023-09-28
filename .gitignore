@@ -7,3 +7,11 @@ dataSources
 *.iws
 *.ipr
 
+# Gradle files
+gradle/wrapper
+
+# Gradle generated files
+.gradle
+buildSrc/build
+web-app/build
+

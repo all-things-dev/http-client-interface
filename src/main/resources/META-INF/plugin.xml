@@ -1,0 +1,50 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+	<!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+	<id>dev.all-things.plugins.http-client-interface</id>
+
+	<!-- Public plugin name should be written in Title Case.
+		 Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+	<name>HTTP Client Interface</name>
+
+	<!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+	<vendor email="" url="https://workingtheory.in">All Things Dev</vendor>
+
+	<version>0.1.0</version>
+	<idea-version since-build="223.0" until-build="233.*" />
+
+
+	<!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+		 Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+		 Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+	<description><![CDATA[Client interface for IntelliJ IDEA HTTP Client files (.http and .rest) ]]></description>
+
+	<!-- Internationalization -->
+	<resource-bundle>config.i18n.messages</resource-bundle>
+
+	<!-- Product and plugin compatibility requirements.
+		 Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+	<depends>com.intellij.modules.platform</depends>
+
+	<!--<dependencies>
+		<plugin id="Git4Idea" />
+	</dependencies>-->
+
+	<!-- Extension points defined by the plugin.
+		 Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+	<extensions defaultExtensionNs="com.intellij">
+
+		<!-- Services -->
+		<!--<applicationService serviceImplementation="dev.workingtheory.plugins.vcs.bitbucket.api.BitbucketApi" />-->
+
+		<!-- Plugin settings -->
+		<!-- <applicationConfigurable parentId="tools" id="io.workingtheory.vcs.bitbucket.PluginConfig" displayName="My Bitbucket"
+								 instance="dev.workingtheory.plugins.vcs.bitbucket.settings.PluginConfigurable" /> -->
+
+		<!-- <toolWindow id="My Bitbucket" factoryClass="dev.workingtheory.plugins.vcs.bitbucket.PluginToolWindow" anchor="bottom"
+					doNotActivateOnStart="false" secondary="false" /> -->
+
+		<!-- <notificationGroup id="MyBitbucketNotificationGroup" displayType="TOOL_WINDOW" /> -->
+
+	</extensions>
+</idea-plugin>
